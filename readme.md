@@ -1,4 +1,5 @@
-## Heyyo everyone, welcome to git guide
+## Welcome to git!
+this is coming from dev-adrian
 
-- yo, john here
+- I'm adding this from
 - 'feature-branch-1'
