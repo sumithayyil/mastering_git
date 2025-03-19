@@ -1,4 +1,4 @@
-## Hello git
+## Heyyo everyone, welcome to git guide
 
-- I'm adding this from
+- yo, john here
 - 'feature-branch-1'
