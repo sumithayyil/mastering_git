@@ -2,8 +2,8 @@ git is distributed version control system
 we can edit the code at any time
 
 download webstorm
-git config --global user.name 'Sumayya'
-git config --global user.email  'sumithayyil5@gmail.com'
+git config --global user.name ''
+git config --global user.email  ''
 
 
 git init
@@ -42,7 +42,7 @@ run
 git branch -M main
 
 to add the local repo to the remote repo
-git remote add origin https://github.com/sumithayyil/mastering_git.git (we mentioned origin as the repo origin)
+git remote add origin  (we mentioned origin as the repo origin)
 git push -u origin main
 this will add the local repo to remote repo
 
