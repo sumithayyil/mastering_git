@@ -46,7 +46,8 @@ git remote add origin https://github.com/sumithayyil/mastering_git.git (we menti
 git push -u origin main
 this will add the local repo to remote repo
 
-Branching and Merging
+BRANCHING AND MERGING
+
 Branches in git allow us to create different version of your project - we can add different features in to the copied branch. the main version of your
 project remain untouched and later merge the branches to the original project
 different people can work on different tasks by using branches
@@ -194,6 +195,13 @@ git push
 
 GIT SAVIOR COMMANDS
 
-git checkout <commit-hash> - is used to view the history of specific commits
+git checkout <commit-hash> - is used to view the history of specific commits(this will not delete or discard anything)
 
-there might be the case you want to checkout to a commit and delete everything comes after it
+there might be the case you want to checkout to a particular commit and delete everything comes after it
+
+that's the job for 
+git reset
+
+suppose you made 10 commits and you want to checkout to 3rd commit and you want to delete all the commit after the 3rd
+it allows to remove the traces of commits and history, but gives us the changes we made in those to be in the discarded commits 
+so we can decide what to do
