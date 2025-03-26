@@ -197,3 +197,84 @@ GIT SAVIOR COMMANDS
 git checkout <commit-hash> - is used to view the history of specific commits
 
 there might be the case you want to checkout to a commit and delete everything comes after it
+
+git revert
+git reset
+git stash
+
+to do all this we can use a GUI(graphical user interface)
+=======
+typical workflow
+1. Clone the repository
+2. create a new branch from the main or another branch
+3. make your changes
+4. push the branch to remote repo
+5. open a pull request
+6. merge the changes
+7. pull the merged changes in to your local main branch
+8. repeat from step2
+
+RESOLVING MERGE CONFLICTS
+
+when 2 or more developers edit the same code git get confused this is called merge conflicts, when
+this happens git asks whose changes to keep.
+
+Will explain this by an example
+
+add one branch and not move to it
+
+git branch dev-jsm
+
+add another and switch to it
+
+git checkout -b dev-adrian
+
+i changed the title and  added new line to readme.md file and pushed
+
+in dev-jsm branch
+
+changed the title to another in the same readme.md file
+
+and did the same, now there are tow pull requests
+
+if i merge the changes from dev-jsm and try to merge the second pull request the second one will get blocked
+
+This branch has conflicts that must be resolved
+
+ig git got confused it expects you to decide which version you need to keep, and manually update the code
+
+sot reolve this merge conflict what we can do is
+
+switch to main branch
+git checkout main
+
+git pull
+
+now the local and remote main branch are identical
+
+now git checkout dev-adrian
+
+git merge main
+
+will get a conflicts, in webstorm pres Alt 0 to see the conflicts
+
+press resolve  and we will get 3 window
+left - our code
+right - their code
+center - result
+
+we can merge the code from dev-adrian and dev-jsm by checking code from left and right
+
+now
+git add ./
+git commit -m 'resolve merge conflicts'
+git push
+
+
+GIT SAVIOR COMMANDS
+
+git checkout <commit-hash> - is used to view the history of specific commits
+
+there might be the case you want to checkout to a commit and delete everything comes after it
+>>>>>>> f9b358cf916845c52c2d6287badef835e4ae6a6e
+
